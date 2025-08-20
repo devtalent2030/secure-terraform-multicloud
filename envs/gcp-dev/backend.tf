@@ -13,7 +13,7 @@
 
 terraform {
   backend "gcs" {
-    bucket = "tfstate-your-uniq-gcs-bucket" # <- create once, globally unique in your project/org
-    prefix = "gcp/dev"                       # <- folder-ish prefix inside the bucket
+    bucket = "tfstate-e35c41217cae4c3d"
+    prefix = "gcp-dev/state"
   }
 }

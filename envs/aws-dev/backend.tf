@@ -13,10 +13,10 @@
 
 terraform {
   backend "s3" {
-    bucket         = "tfstate-your-uniq-bucket"  # << Create once, globally unique
-    key            = "aws/dev/terraform.tfstate" # << Logical path inside bucket
-    region         = "us-east-1"                 # << Match AWS_REGION
-    dynamodb_table = "tf-state-locks"            # << Create once; prevents concurrent ops
-    encrypt        = true                        # << Force SSE encryption
+    bucket         = "tfstate-ca2865d1cd37461887cb32f8d1e6ffbe"
+    key            = "aws-dev/terraform.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "tf-state-locks"
+    encrypt        = true
   }
 }

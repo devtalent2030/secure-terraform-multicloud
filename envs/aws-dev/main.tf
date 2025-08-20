@@ -36,6 +36,15 @@ resource "random_id" "rand" {
   byte_length = 4
 }
 
+# Enable versioning on the demo bucket
+resource "aws_s3_bucket_versioning" "state_demo_ver" {
+  bucket = aws_s3_bucket.state_demo.id
+
+  versioning_configuration {
+    status = "Enabled"
+  }
+}
+
 # Useful output for downstream use (peering, app modules, etc.)
 output "vpc_id" {
   value = module.network.vpc_id

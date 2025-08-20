@@ -1,9 +1,3 @@
-Absolutely—let’s turn this into a **top-tier, end-to-end testing guide** that anyone can clone and run.
-
-Below is a complete Markdown doc you can drop into your repo as **`TESTING.md`** (or `docs/TESTING.md`). It’s self-contained, copy-pastable, and written so a new engineer can follow it start-to-finish without secrets committed to the repo.
-
----
-
 # TESTING.md — End-to-End Validation Guide
 
 This document shows how to:
@@ -475,5 +469,3 @@ make gcp-destroy GCP_EXPECTED_PROJECT=terraform1718
 ```
 
 ---
-
-If you want, I can also add a **CI job example** (GitHub Actions) that runs `make validate`, builds a plan JSON per env, runs **OPA `deny`**, and fails the PR on violations.
