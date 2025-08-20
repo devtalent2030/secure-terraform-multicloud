@@ -1,0 +1,17 @@
+
+
+{
+  "//": "Example input to test policies without needing a real Terraform plan",
+  "buckets": [
+    {
+      "cloud": "aws",
+      "name": "example-aws-bucket",
+      "acl": "private"
+    },
+    {
+      "cloud": "gcp",
+      "name": "example-gcp-bucket",
+      "members": ["projectViewer:foo"]
+    }
+  ]
+}
